@@ -392,8 +392,3 @@ app/
 | Android SDK | 24+（最低支持 Android 7.0） |
 
 ---
-
-### **2. 克隆项目**
-
-```bash
-git clone https://github.com/Conrad-Lee/AndroidProjects.git
