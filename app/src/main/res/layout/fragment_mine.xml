@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 顶部蓝色区域 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="#2196F3"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="24dp">
+
+            <ImageView
+                android:id="@+id/ivUserAvatar"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/default_avatar"
+                android:background="@android:color/white"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="16dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvNickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="用户名"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="欢迎来到信息App"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 信息列表项 -->
+        <LinearLayout
+            android:id="@+id/ll_items_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/item_setting" />
+            <include layout="@layout/item_setting" />
+            <include layout="@layout/item_setting" />
+            <include layout="@layout/item_setting" />
+            <include layout="@layout/item_setting" />
+            <include layout="@layout/item_setting" />
+            <include layout="@layout/item_setting" />
+        </LinearLayout>
+
+        <!-- 退出登录 -->
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="退出登录"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#F44336"
+            android:layout_margin="24dp"/>
+        <Button
+            android:id="@+id/btnShowDatabaseInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前账号信息"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#F44336"
+            android:padding="16dp" />
+    </LinearLayout>
+
+</ScrollView>

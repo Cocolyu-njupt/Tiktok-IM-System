@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="4dp"
+    android:padding="12dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- 模块标题 -->
+            <TextView
+                android:id="@+id/tvModuleTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="消息模块（Message）"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:paddingBottom="8dp" />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/vpModulePages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never" />
+
+        </LinearLayout>
+
+        <!-- 左箭头 -->
+        <ImageView
+            android:id="@+id/ivLeft"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical|start"
+            android:padding="6dp"
+            android:background="#40FFFFFF"
+            android:src="@drawable/ic_left"
+            android:alpha="0.5" />
+
+        <!-- 右箭头 -->
+        <ImageView
+            android:id="@+id/ivRight"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical|end"
+            android:padding="6dp"
+            android:background="#40FFFFFF"
+            android:src="@drawable/ic_right"
+            android:alpha="0.5" />
+
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

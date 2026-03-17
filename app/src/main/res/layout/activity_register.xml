@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- 标题 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="欢迎注册"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请填写以下信息完成注册"
+            android:textSize="14sp"
+            android:textColor="#888888"
+            android:layout_marginBottom="24dp" />
+
+        <!-- 输入手机号或邮箱 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:background="#F5F5F5"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_mail"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="8dp" />
+
+            <EditText
+                android:id="@+id/editTextAccount"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="手机号或邮箱"
+                android:background="@null"
+                android:inputType="textEmailAddress"
+                android:textColor="#000000"
+                android:textColorHint="#AAAAAA" />
+        </LinearLayout>
+
+        <!-- 密码 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:background="#F5F5F5"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_pwd"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="8dp" />
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="密码（至少6位）"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:textColor="#000000"
+                android:textColorHint="#AAAAAA" />
+        </LinearLayout>
+
+        <!-- 昵称 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:background="#F5F5F5"
+            android:padding="8dp"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_profile"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="8dp" />
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="昵称"
+                android:background="@null"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:textColorHint="#AAAAAA" />
+        </LinearLayout>
+
+        <!-- 注册按钮 -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="注册"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2196F3"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>

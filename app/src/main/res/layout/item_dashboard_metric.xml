@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp">
+
+    <!-- 指标名称 -->
+    <TextView
+        android:id="@+id/tvMetricTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="指标名称"
+        android:textColor="#444444"
+        android:textSize="14sp" />
+
+    <!-- 指标值 -->
+    <TextView
+        android:id="@+id/tvMetricValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+</LinearLayout>

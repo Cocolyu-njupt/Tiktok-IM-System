@@ -1,0 +1,164 @@
+[
+  {
+    "type": 1,
+    "friendName": "Tricker.",
+    "friendAvatar": "avatar1",
+    "online": true,
+    "content": "晃个头无敌了",
+    "isMe": false,
+    "isRead": false,
+    "time": "10:01",
+    "unread": 1
+  },
+  {
+    "type": 1,
+    "friendName": "地瓜丸如",
+    "friendAvatar": "avatar2",
+    "online": false,
+    "content": "Go back to the 2049",
+    "isMe": false,
+    "isRead": true,
+    "time": "09:23",
+    "unread": 4
+  },
+  {
+    "type": 2,
+    "groupName": "养生局--运动分局",
+    "groupAvatar": "avatar3",
+    "senderName": "工位的奶牛",
+    "content": "分享[评论]",
+    "isMe": false,
+    "time": "18:18",
+    "unread": 65
+  },
+  {
+    "type": 2,
+    "groupName": "Ranida学习交流群2群",
+    "groupAvatar": "avatar1",
+    "senderName": "梦花yu",
+    "content": "有 我记得我好像在……",
+    "isMe": false,
+    "time": "17:55",
+    "unread": 7
+  },
+  {
+    "type": 2,
+    "groupName": "Ranida学习交流群2群",
+    "groupAvatar": "avatar1",
+    "senderName": "梦花yu",
+    "content": "有 我记得我好像在……",
+    "isMe": false,
+    "time": "17:55",
+    "unread": 7
+  },  {
+    "type": 2,
+    "groupName": "Ranida学习交流群2群",
+    "groupAvatar": "avatar1",
+    "senderName": "梦花yu",
+    "content": "有 我记得我好像在……",
+    "isMe": false,
+    "time": "17:55",
+    "unread": 7
+  },
+  {
+    "type": 2,
+    "groupName": "Ranida学习交流群2群",
+    "groupAvatar": "avatar1",
+    "senderName": "梦花yu",
+    "content": "有 我记得我好像在……",
+    "isMe": false,
+    "time": "17:55",
+    "unread": 7
+  },{
+  "type": 2,
+  "groupName": "Ranida学习交流群2群",
+  "groupAvatar": "avatar1",
+  "senderName": "梦花yu",
+  "content": "有 我记得我好像在……",
+  "isMe": false,
+  "time": "17:55",
+  "unread": 7
+},
+  {
+    "type": 2,
+    "groupName": "Ranida学习交流群2群",
+    "groupAvatar": "avatar1",
+    "senderName": "梦花yu",
+    "content": "有 我记得我好像在……",
+    "isMe": false,
+    "time": "17:55",
+    "unread": 7
+  },
+
+  {
+    "type": 2,
+    "groupName": "Ranida学习交流群2群",
+    "groupAvatar": "avatar1",
+    "senderName": "梦花yu",
+    "content": "有 我记得我好像在……",
+    "isMe": false,
+    "time": "17:55",
+    "unread": 7
+  },
+  {
+    "type": 2,
+    "groupName": "Ranida学习交流群2群",
+    "groupAvatar": "avatar1",
+    "senderName": "梦花yu",
+    "content": "有 我记得我好像在……",
+    "isMe": false,
+    "time": "17:55",
+    "unread": 7
+  },
+  {
+    "type": 2,
+    "groupName": "Ranida学习交流群2群",
+    "groupAvatar": "avatar1",
+    "senderName": "梦花yu",
+    "content": "有 我记得我好像在……",
+    "isMe": false,
+    "time": "17:55",
+    "unread": 7
+  },
+  {
+    "type": 2,
+    "groupName": "Ranida学习交流群2群",
+    "groupAvatar": "avatar1",
+    "senderName": "梦花yu",
+    "content": "有 我记得我好像在……",
+    "isMe": false,
+    "time": "17:55",
+    "unread": 7
+  },
+  {
+    "type": 2,
+    "groupName": "Ranida学习交流群2群",
+    "groupAvatar": "avatar1",
+    "senderName": "梦花yu",
+    "content": "有 我记得我好像在……",
+    "isMe": false,
+    "time": "17:55",
+    "unread": 7
+  },
+  {
+    "type": 2,
+    "groupName": "Ranida学习交流群2群",
+    "groupAvatar": "avatar1",
+    "senderName": "梦花yu",
+    "content": "有 我记得我好像在……",
+    "isMe": false,
+    "time": "17:55",
+    "unread": 7
+  },
+  {
+    "type": 2,
+    "groupName": "Ranida学习交流群2群",
+    "groupAvatar": "avatar1",
+    "senderName": "梦花yu",
+    "content": "有 我记得我好像在……",
+    "isMe": false,
+    "time": "17:55",
+    "unread": 7
+  }
+
+]

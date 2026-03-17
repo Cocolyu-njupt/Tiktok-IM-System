@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_weather_card_trans">
+
+    <!-- 星期几 -->
+    <TextView
+        android:id="@+id/tvWeek"
+        android:text="周一"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- 日期 -->
+    <TextView
+        android:id="@+id/tvDate"
+        android:text="01-12"
+        android:textColor="#E6FFFFFF"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- 天气 -->
+    <TextView
+        android:id="@+id/tvWeather"
+        android:text="多云"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- 温度区间 -->
+    <TextView
+        android:id="@+id/tvTemp"
+        android:text="25° / 18°"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:layout_marginTop="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

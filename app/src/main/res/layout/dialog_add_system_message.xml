@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog_round"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- 标题 -->
+    <TextView
+        android:text="添加系统消息"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- 输入发送人 -->
+    <EditText
+        android:id="@+id/etSender"
+        android:layout_marginTop="16dp"
+        android:hint="请输入发送人名称"
+        android:background="@drawable/bg_input_round"
+        android:padding="12dp"
+        android:textColor="#222"
+        android:textColorHint="#888"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+
+    <!-- 操作列表 -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/btnLike"
+            android:text="👍 赞了你"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/btnFollow"
+            android:text="⭐ 关注了你"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/btnAt"
+            android:text="🗨️ @了你"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/btnReply"
+            android:text="💬 回复了你"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/btnComment"
+            android:text="📝 评论了你"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <!-- 底部取消 -->
+    <TextView
+        android:id="@+id/btnCancel"
+        android:text="取消"
+        android:textSize="16sp"
+        android:textColor="#888"
+        android:padding="12dp"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:background="@drawable/pop_background"
+    android:gravity="center_vertical">
+
+    <!-- 发起群聊 -->
+    <LinearLayout
+        android:id="@+id/btnGroupChat"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/ic_new_group" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="展示好友"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:layout_marginStart="12dp" />
+    </LinearLayout>
+
+    <!-- 添加好友 -->
+    <LinearLayout
+        android:id="@+id/btnAddFriend"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/ic_new_friend" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加好友"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:layout_marginStart="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnScan"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/ic_scan" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="展示所有消息"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:layout_marginStart="12dp" />
+    </LinearLayout>
+    <!-- 清空所有未读消息 -->
+    <LinearLayout
+        android:id="@+id/btnClearUnread"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="12dp">
+
+        <ImageView
+            android:src="@drawable/ic_clean"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清空所有未读"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <!-- 手动新建对话 -->
+    <LinearLayout
+        android:id="@+id/btnSpark"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/ic_create" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加对话"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:layout_marginStart="12dp" />
+
+    </LinearLayout>
+
+
+<!--自动消息推送-->
+    <LinearLayout
+        android:id="@+id/btnTogglePush"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/ic_push" />
+
+        <TextView
+            android:id="@+id/tvTogglePush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启消息推送"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:layout_marginStart="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnAddSystemMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <ImageView
+            android:src="@drawable/ic_system_default"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加互动消息"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnShowSystemMessages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <ImageView
+            android:src="@drawable/ic_system_default"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="展示系统消息"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 微灰色更柔和，而不是纯白 -->
+    <solid android:color="#FAFAFA"/>
+
+    <!-- 更大的圆角，弹窗更像卡片 -->
+    <corners android:radius="24dp"/>
+
+    <!-- 添加轻微描边，更有层次 -->
+    <stroke
+        android:width="0.6dp"
+        android:color="#22000000"/>
+</shape>

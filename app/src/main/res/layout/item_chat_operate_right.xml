@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="end"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- 运营卡片 -->
+    <LinearLayout
+        android:id="@+id/bubbleRight"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_chat_right"
+        android:padding="10dp"
+        android:maxWidth="260dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我发起的活动"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="这里是活动内容"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btnAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="查看详情"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <!-- 我的头像 -->
+    <ImageView
+        android:id="@+id/ivAvatarRight"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/default_avatar"
+        android:layout_marginStart="8dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/bg_round"
+        android:clipToOutline="true" />
+</LinearLayout>

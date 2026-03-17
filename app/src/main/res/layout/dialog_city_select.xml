@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@android:color/white"
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- 左侧省份列表 -->
+    <ListView
+        android:id="@+id/lvProvince"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="300dp"
+        android:dividerHeight="1dp" />
+
+    <!-- 右侧城市列表 -->
+    <ListView
+        android:id="@+id/lvCity"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="300dp"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>

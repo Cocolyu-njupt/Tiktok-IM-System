@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- 半透明深色卡片，可与黑色负一屏完美搭配 -->
+    <solid android:color="#1A1A1A" />
+
+    <corners android:radius="16dp" />
+
+    <padding
+        android:left="16dp"
+        android:top="16dp"
+        android:right="16dp"
+        android:bottom="16dp" />
+
+</shape>

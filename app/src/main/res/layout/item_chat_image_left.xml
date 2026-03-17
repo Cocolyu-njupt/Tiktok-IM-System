@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- 好友头像 -->
+    <ImageView
+        android:id="@+id/ivAvatarLeft"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/default_avatar"
+        android:layout_marginEnd="8dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/bg_round"
+        android:clipToOutline="true" />
+
+    <!-- 气泡 + 图片 -->
+    <LinearLayout
+        android:id="@+id/bubbleLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_chat_left"
+        android:padding="6dp"
+        android:maxWidth="260dp">
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootNegative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B0B0B"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:fitsSystemWindows="true"
+    android:clickable="true"
+    android:focusable="true">
+
+    <!-- 顶部天气卡片 -->
+    <LinearLayout
+        android:id="@+id/weatherCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_weather_card_gradient"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- 城市名 + 切换按钮  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvCity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="--"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/btnChangeCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="切换城市"
+                android:textColor="#4DA3FF"
+                android:textSize="13sp"
+                android:padding="6dp"
+                android:background="@drawable/bg_change_city_btn"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvWeather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textColor="#DDDDDD"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/tvTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--°"
+            android:textColor="#FFFFFF"
+            android:textSize="56sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tvRange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最高: --°  最低: --°"
+            android:textColor="#BBBBBB"
+            android:textSize="13sp"
+            android:layout_marginTop="6dp"/>
+
+        <TextView
+            android:id="@+id/tvReportTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更新时间: --"
+            android:textColor="#888888"
+            android:textSize="12sp"
+            android:layout_marginTop="6dp"/>
+
+        <ProgressBar
+            android:id="@+id/pbWeatherLoading"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tvWeatherError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="天气加载失败，点我重试"
+            android:textColor="#FF6666"
+            android:textSize="13sp"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+
+    <!-- 负一屏其他内容占位 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp"
+        android:background="#0B0B0B"/> <!-- 添加背景防止透点问题 -->
+</LinearLayout>

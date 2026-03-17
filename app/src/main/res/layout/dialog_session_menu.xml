@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_round"
+    android:paddingTop="18dp"
+    android:paddingBottom="10dp"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp">
+
+    <!-- 标题 -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:text="标题"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:paddingBottom="14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- 分割线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="#22000000"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- 每个 item 的共同 style -->
+    <TextView
+        android:id="@+id/btnPin"
+        android:text="置顶"
+        style="@style/DialogMenuItemStyle"/>
+
+    <TextView
+        android:id="@+id/btnHide"
+        android:text="不显示"
+        style="@style/DialogMenuItemStyle"/>
+
+    <TextView
+        android:id="@+id/btnDelete"
+        android:text="删除"
+        style="@style/DialogMenuItemStyle"/>
+
+    <TextView
+        android:id="@+id/btnRemark"
+        android:text="设置备注"
+        style="@style/DialogMenuItemStyle"/>
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:orientation="horizontal"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:gravity="center_vertical">
+
+    <!-- 左侧图标 -->
+    <ImageView
+        android:id="@+id/ivSystemIcon"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_system_default"
+        android:layout_marginEnd="12dp" />
+
+    <!-- 中间标题 + 内容 -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 标题 -->
+        <TextView
+            android:id="@+id/tvSystemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="系统消息"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <!-- 内容摘要 -->
+        <TextView
+            android:id="@+id/tvSystemContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="这是内容摘要"
+            android:textSize="14sp"
+            android:textColor="#A5A5A5"
+            android:layout_marginTop="4dp"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+    </LinearLayout>
+
+    <!-- 右侧时间 + 未读红点 -->
+    <LinearLayout
+        android:id="@+id/layoutRightSystem"
+        android:orientation="vertical"
+        android:gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp">
+
+        <!-- 时间 -->
+        <TextView
+            android:id="@+id/tvSystemTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13:56"
+            android:textSize="13sp"
+            android:textColor="#A5A5A5"/>
+
+        <!-- 未读红点（放在时间下方） -->
+        <ImageView
+            android:id="@+id/ivSystemUnread"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/ic_red_dot"
+        android:visibility="gone"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@android:color/white">
+
+    <!-- 标题 -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择头像"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="12dp" />
+
+    <!-- 可上下滑动的头像区域 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <LinearLayout
+            android:id="@+id/llAvatarContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginTop="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- 白天卡片 -->
+    <LinearLayout
+        android:background="@drawable/bg_card_round"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView android:text="白天" android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/tvDayWeather" />
+            <TextView android:id="@+id/tvDayTemp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 夜间卡片 -->
+    <LinearLayout
+        android:background="@drawable/bg_card_round"
+        android:padding="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView android:text="夜间" android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/tvNightWeather"/>
+            <TextView android:id="@+id/tvNightTemp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

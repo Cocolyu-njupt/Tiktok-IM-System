@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000">
+
+        <!-- 顶部导航栏 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@color/black"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/ivMenu"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="消息"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/ivSearch"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_search" />
+
+            <ImageView
+                android:id="@+id/ivAdd"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="12dp"
+                android:src="@drawable/ic_add_round" />
+        </LinearLayout>
+
+
+        <!-- 横向列表 + 消息列表 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="52dp"
+            android:orientation="vertical">
+
+            <!-- 横向占位（可滚动） -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="8dp" />
+
+            <!-- 消息列表 -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvMessages"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <!-- 空态 -->
+        <include
+            android:id="@+id/layoutEmpty"
+            layout="@layout/layout_state_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <!-- 错误态 -->
+        <include
+            android:id="@+id/layoutError"
+            layout="@layout/layout_state_error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <!-- 加载态 -->
+        <include
+            android:id="@+id/layoutLoading"
+            layout="@layout/layout_state_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/layoutSkeleton"
+            layout="@layout/layout_state_skeleton"
+            android:visibility="gone"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

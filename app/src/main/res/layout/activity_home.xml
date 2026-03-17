@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!-- ================= 主内容区 ================= -->
+    <RelativeLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <!-- 内容区域 -->
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/custom_bottom_nav" />
+
+        <!-- 自定义底部导航栏，预留中间按钮空间 -->
+        <LinearLayout
+            android:id="@+id/custom_bottom_nav"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/black"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp">
+
+            <!-- 左侧导航项 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/nav_home"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="首页"
+                    android:textSize="14sp"
+                    android:textColor="#F5F5F5" />
+
+                <TextView
+                    android:id="@+id/nav_friend"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="朋友"
+                    android:textSize="14sp"
+                    android:textColor="#F5F5F5" />
+            </LinearLayout>
+
+            <!-- 中间留白位置 -->
+            <TextView
+                android:id="@+id/nav_upload"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="+"
+                android:textSize="24sp"
+                android:textColor="#F5F5F5" />
+
+            <!-- 右侧导航项 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <!-- 消息文字 -->
+                    <TextView
+                        android:id="@+id/nav_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="消息"
+                        android:textColor="#F5F5F5"
+                        android:textSize="14dp" />
+
+                    <!-- 未读气泡（右上角） -->
+                    <TextView
+                        android:id="@+id/nav_message_badge"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/red_dot_background"
+                        android:textColor="#FFFFFF"
+                        android:textSize="10sp"
+                        android:layout_gravity="top|end"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="8dp"
+                        android:gravity="center"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/nav_mine"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="我"
+                    android:textSize="14sp"
+                    android:textColor="#F5F5F5" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- ================= 左侧抽屉：NegativeFragment 容器 ================= -->
+    <FrameLayout
+        android:id="@+id/negative_container"
+        android:layout_width="340dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/black" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

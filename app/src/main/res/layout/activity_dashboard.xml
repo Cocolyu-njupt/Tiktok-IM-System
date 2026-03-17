@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F8FA"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#2196F3"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp">
+
+        <!-- 返回按钮 -->
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_left"
+            android:layout_centerVertical="true"
+            android:padding="2dp" />
+
+        <!-- 标题 -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数据看板"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <!-- ===== RecyclerView：显示各个模块的数据 ===== -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDashboardModules"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp"
+        android:clipToPadding="false" />
+
+</LinearLayout>
